@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: #f6f6f6;
+    min-width: 360px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--bs-font-sans-serif);
+}
+
+.bodyWrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #f0f0f0;
+}
+
+.main {
+    align-self: center;
+    width: 1240px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.width-350 {
+    width: 350px;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.result-first-wrap,
+.result-draw-wrap,
+.result-second-wrap,
+.result-select-label {
+    cursor: pointer;
+    background-color: #e2e2e2;
+    font-size: 1.2rem;
+}
+
+.result-first-wrap,
+.result-second-wrap {
+    border-right: 2px solid #1d1d1d;
+}
+
+.result-select-label {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.result-first-wrap:hover,
+.result-draw-wrap:hover,
+.result-second-wrap:hover,
+.result-select-label:hover {
+    background-color: #e8ee5c;
+}
+
+.main-bg-teams {
+    background-color: #b1b1b1;
+}
+
+.active-bg-teams {
+    background-color: #e8ee5c;
+}
+
+.btn-result-wrap {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-name {
+    text-align: center;
+}
+
+.error_msg {
+    color: #e30000;
+    font-size: 1.2rem;
+}
+
+.bet-result {
+    font-size: 1.2rem;
+}
+
+.text-green {
+    color: #03885f;
+    font-weight: bold;
+}
+
+.text-red {
+    color: #b02200;
+    font-weight: bold;
+}
+
+.text-warning {
+    color: #d77012;
+    font-weight: bold;
+}
+
+.flex-align-center {
+    align-items: center;
+}

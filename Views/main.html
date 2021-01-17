@@ -1,0 +1,87 @@
+<main class="main">
+    <div class="form">
+        <form class="form-bet">
+            <div class="row mb-1">
+                <div class="width-350">
+                    <select class="form-select" id="list-players" name="select_user" required>
+                        <option selected disabled value="">Выберите игрока</option>
+                    </select>
+                </div>
+            </div>
+            <p class="text-warning">Внимание: Ставка у которой не указана сумма или команда, учитываться не будет!</p>
+
+
+            <div class="bet-football mb-3">
+                <h2 class="team-name">Football: Texas Rangers vs Arizona Diamondbacks</h2>
+                <div class="row flex-align-center">
+                    <div class="input-group width-350 mb-1 mr-1">
+                        <input type="number" class="form-control bet-amount" name="football_stake_amount" id="football-stake_amount" placeholder="Сумма ставки (футбол)" min="1" step="0.01">
+                        <span class="input-group-text" id="football-stake-amount-info">Сумма ставки</span>
+                    </div>
+                    <div class="input-group forceResultFootballWrap width-350 mb-1">
+                        <div class="mr-1">
+                            <input  class="form-check-input" type="checkbox" name="footballForceResult" id="checkboxFootballWin" value="footballForceWin">
+                            <label for="checkboxFootballWin">Победа</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" name="footballForceResult" id="checkboxFootballLose" value="footballForceLose">
+                            <label for="checkboxFootballLose">Проигрыш</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row select-result-football">
+                    <div class="col result-first-wrap">
+                        <input type="radio" class="d-none" name="choosing_football_winner" id="footbal-win-first" value="football-win-1">
+                        <label class="result-select-label football-win-1" for="footbal-win-first">Победа первой команды <span id="coefficient-football-win-1">2.10</span></label>
+                    </div>
+                    <div class="col result-second-wrap">
+                        <input type="radio" class="d-none" name="choosing_football_winner" id="footbal-win-second" value="football-win-2">
+                        <label class="result-select-label football-win-2" for="footbal-win-second">Победа второй команды <span id="coefficient-football-win-2">2.56</span></label>
+                    </div>
+                    <div class="col result-draw-wrap">
+                        <input type="radio" class="d-none" name="choosing_football_winner" id="footbal-win-draw" value="football-draw-3">
+                        <label class="result-select-label football-draw-3" for="footbal-win-draw">Ничья <span id="coefficient-football-draw-3">2.18</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="bet-baseball mb-3">
+                <h2 class="team-name">Baseball: Barcelona vs Manchester United</h2>
+                <div class="row flex-align-center">
+                    <div class="input-group width-350 mb-1 mr-1">
+                        <input type="number" class="form-control bet-amount" name="baseball_stake_amount" id="baseball-stake-amount" placeholder="Сумма ставки (бейсбол)" min="1" step="0.01">
+                        <span class="input-group-text" id="baseball-stake-amount-info">Сумма ставки</span>
+                    </div>
+                    <div class="input-group forceResultBaseballWrap width-350 mb-1">
+                        <div class="mr-1">
+                            <input  class="form-check-input" type="checkbox" name="baseballForceResult" id="checkboxBaseballWin" value="baseballForceWin">
+                            <label for="checkboxBaseballWin">Победа</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" name="baseballForceResult" id="checkboxBaseballLose" value="baseballForceLose">
+                            <label for="checkboxBaseballLose">Проигрыш</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row select-result-beseball">
+                    <div class="col result-first-wrap">
+                        <input type="radio" class="d-none" name="choosing_baseball_winner" id="baseball-win-first" value="baseball-win-1">
+                        <label class="result-select-label baseball-win-1" for="baseball-win-first">Победа первой команды <span id="coefficient-baseball-win-1">2.10</span></label>
+                    </div>
+                    <div class="col result-second-wrap">
+                        <input type="radio" class="d-none" name="choosing_baseball_winner" id="baseball-win-second" value="baseball-win-2">
+                        <label class="result-select-label baseball-win-2" for="baseball-win-second">Победа второй команды <span id="coefficient-baseball-win-2">2.56</span></label>
+                    </div>
+                    <div class="col result-draw-wrap">
+                        <input type="radio" class="d-none" name="choosing_baseball_winner" id="baseball-win-draw" value="baseball-draw-3">
+                        <label class="result-select-label baseball-draw-3" for="baseball-win-draw">Ничья <span id="coefficient-baseball-draw-3">2.18</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row btn-result-wrap">
+                <button class="btn btn-primary" id="get-bet-btn" type="submit">Узнать результаты</button>
+            </div>
+        </form>
+    </div>
+    <div class="bet-result"></div>
+    <div class="error_msg"></div>
+</main>
